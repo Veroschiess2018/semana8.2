@@ -15,6 +15,7 @@ body{
 		border-radius: 25px;
 		width: 940px;
 		height: 300px;
+		cursor: point
 
 	}
 	#galería_miniaturas{
@@ -30,14 +31,17 @@ body{
 		padding: 5px;
 		margin: 10px 5px;
 	}
-	img.desaturada{
-		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		-ms-filter: grayscale(100%);
-		-o-filter:grayscale(100%);
-	}
-	 img.Saturate_Desaturate{ 
-$colorMan: #336699;
-#pageMan{
- color: saturate($colorMan, 15%);
+	
+	img {
+    filter:         url(~"data:imagenes,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    filter: gray; 
 }
+
+img:hover {
+    filter: none;
+    cursor: pointer;
+} 
