@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="semana8.1.2.css">
+	 <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <script>
+  	alert("bienvenido");
+  </script>
+</head>
+<body>
+	<div id="galería">
+		<div id="galería_imagenes">
+			<img src="imagenes/paine.jpg" id="principal" class="desaturada">
+		</div>
+		<div id="galería_miniaturas"> <img class="miniaturas" src="imagenes/1.jpg"></div>
+		<div id="galería_miniaturas"> <img class="miniaturas" src="imagenes/turismo.jpg"></div>
+		<div id="galería_miniaturas"> <img class="miniaturas" src="imagenes/museo-colonial.jpg"></div>
+		<div id="galería_miniaturas"> <img class="miniaturas" src="imagenes/sur.jpg"></div>
+	</div>
+	<script type="text/javascript">
+		$("#galería_miniaturas").on("click", function()
+		{alert("ya abrió mí página");
+		})
+		</script>}
+		<script type="text/javascript">
+		<onmouseout="this.src='paine.jpg';this.style.filter=''" onmouseover="toGrayScale(this)" src="paine.jpg" width="550" height="413" /> 
+	</script>
+</body>
+</html>
